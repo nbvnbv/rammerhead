@@ -90,7 +90,7 @@ class RammerheadProxy extends Proxy {
         loggerGetIP = (req) => req.socket.remoteAddress,
         logger = new RammerheadLogging({ logLevel: 'disabled' }),
         bindingAddress = '127.0.0.1',
-        port = 8080,
+        port = 8000,
         crossDomainPort = 8081,
         dontListen = false,
         ssl = null,
