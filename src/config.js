@@ -85,7 +85,7 @@ module.exports = {
     //// LOGGING CONFIGURATION ////
 
     // valid values: 'disabled', 'debug', 'traffic', 'info', 'warn', 'error'
-    logLevel: process.env.DEVELOPMENT ? 'debug' : 'info',
+    logLevel: process.env.DEVELOPMENT ? 'debug' : 'debug',
     generatePrefix: (level) => `[${new Date().toISOString()}] [${level.toUpperCase()}] `,
 
     // logger depends on this value
