@@ -10,8 +10,8 @@ module.exports = {
     //// HOSTING CONFIGURATION ////
 
     bindingAddress: '0.0.0.0',
-    port: 443,
-    crossDomainPort: 8443,
+    port: 8000,
+    crossDomainPort: 8081,
     publicDir: path.join(__dirname, '../public'), // set to null to disable
 
     // enable or disable multithreading
@@ -29,7 +29,7 @@ module.exports = {
     // example of non-hard-coding the hostname header
     // crossDomainPort: 8443
     getServerInfo: (req) => {
-         return { hostname: new URL('http://' + req.headers.host).hostname, port: 443, crossDomainPort: 8443, protocol: 'https:' };
+         return { hostname: new URL('http://' + req.headers.host).hostname, port: 443, crossDomainPort: 8081, protocol: 'https:' };
     },
 
     // enforce a password for creating new sessions. set to null to disable
